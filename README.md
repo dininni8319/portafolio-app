@@ -1,16 +1,33 @@
 <h1>Portfolio Website</h1>
 
-<h3>Start a new Next project</h3>
+<h3>Start a new Next.js project</h3>
 	→ pnpm create next-app  <br/> <!-- <your app name>  --> <br/>
   → pnpm run dev --> hot reload, and refresh the code<br/>
-<h3>Thailwind congifs:</h3>
-- pnpm install -D tailwindcss postcss autoprefixer<br/>
+  
+<h3>Tailwind congifs:</h3>
+→ pnpm install -D tailwindcss postcss autoprefixer<br/>
+→ npx tailwindcss init -p<br/>
+
+<h3>React Icon</h3>
+ → pnpm i react-icon<br/>
+past this code into the tailwind.config.js<br/>
+ content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",<br/>
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",<br/>
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",<br/>
+ 
+ <br/>   // Or if using `src` directory:  
+  <br/>  "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+<br/>
+
+copy this into globals.css<br/>
+@tailwind base;<br/>
+@tailwind components;<br/>
+@tailwind utilities;<br/>
 
 
-
-
-
-<h2>Full-Stack Developer ___ <span>Salvatore Dininni</span></h2>
+<h2>FullStack Developer ___ <span>Salvatore Dininni</span></h2>
 
 <h4>Something about Me<h4>
 <p>A Highly Motivated Individual, open to new challenges and quickly learns new technologies. Self-driven, dedicated, and hard-working. Passionate about Web Development, Web Design, and Web Technologies.</p>
