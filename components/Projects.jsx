@@ -12,8 +12,9 @@ import foodApp from '../public/assets/projects/food-app.png'
 import ProjectItem from './ProjectItem'
 
 const Projects = () => {
+
   return (
-    <div className='w-full'>
+    <div id='projects' className='w-full'>
       <div className="max-w-[1240px] mx-auto px2 py-16">
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
         <h2 className='py-4'>What {"I have"} Built</h2>
@@ -22,61 +23,61 @@ const Projects = () => {
               src={ecommerce}
               title='E-commerce'
               description='MERN Stack Project'
-              link='/'
+              link='/ecommerce'
             />
             <ProjectItem
               src={rehacktor}
               title='Rehacktor'
               description='React Game Streaming Application'
-              link='/'
+              link='/rehacktor'
             />
             <ProjectItem
               src={presto}
               title='Presto'
               description='Larevel Application'
-              link='/'
+              link='/presto'
             />
             <ProjectItem
               src={places}
               title='Places'
               description='MERN Stack Project Udemy'
-              link='/'
+              link='/places'
             />
             <ProjectItem
               src={githubSearch}
               title='Github-Search'
               description='React App'
-              link='/'
+              link='/github-search'
             />
             <ProjectItem
               src={movieApp}
               title='Movie-Trailer-App'
               description='React App'
-              link='/'
+              link='/movie-app'
             />
               <ProjectItem
               src={motion}
               title='Motion'
               description='Motion React Application'
-              link='/'
+              link='/motion'
             />
               <ProjectItem
               src={luna}
               title='Luna'
               description='React & Django Application'
-              link='/'
+              link='/luna'
             />
             <ProjectItem
               src={foodApp}
               title='Ordering-App'
               description='React App'
-              link='/'
+              link='/ordering-app'
             />
             <ProjectItem
               src={eventApp}
               title='Event-App'
               description='React App'
-              link='/'
+              link='/event-app'
             />
       </div>
     </div>
