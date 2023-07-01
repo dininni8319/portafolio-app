@@ -30,7 +30,7 @@ const MovieApp = () => {
             <p className='text-gray-600 py-2 flex items-center'>
               <RiRadioButtonFill className='pr-1' />React
             </p>
-             <p className='text-gray-600 py-2 flex items-center'>
+            <p className='text-gray-600 py-2 flex items-center'>
               <RiRadioButtonFill className='pr-1' />CSS 
             </p>
           </div>

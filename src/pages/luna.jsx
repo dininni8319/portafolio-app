@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import github_search from '../../public/assets/projects/github-search.jpeg'
+import luna from '../../public/assets/projects/luna.png'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 
@@ -9,9 +9,9 @@ const Luna = () => {
     <div  className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10' />
-        <Image className='absolute z-1' fill={true} style={{ objectFit: 'cover'}} src={github_search} alt='Rehacktor' />
+        <Image className='absolute z-1' fill={true} style={{ objectFit: 'cover'}} src={luna} alt='Rehacktor' />
         <div className='text-white z-10 p-2 absolute top-[60%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] traslate-y-[-50]'>
-          <h2 className='py-2'>Github Search App</h2>
+          <h2 className='py-2'>Luna Application</h2>
           <h3>React JS / Django </h3>
         </div>
      </div>

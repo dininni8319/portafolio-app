@@ -4,7 +4,7 @@ import eCommerce from '../../public/assets/projects/e-commerce.png'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 
-const ecommerce = () => {
+const Ecommerce = () => {
   return (
     <div  className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
@@ -56,4 +56,4 @@ const ecommerce = () => {
   )
 }
 
-export default ecommerce
+export default Ecommerce
