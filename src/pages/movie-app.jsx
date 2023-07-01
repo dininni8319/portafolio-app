@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import github_search from '../../public/assets/projects/github-search.jpeg'
+import github_search from '../../public/assets/projects/movie-app.png'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 
@@ -20,8 +20,9 @@ const MovieApp = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>This app was build using React JS</p>
-       <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
-       <button className='px-8 py-2 mt-4'>CODE</button>
+        <Link target='_blanck' href='https://github.com/dininni8319/movie-app'>
+          <button className='px-8 py-2 mt-4'>CODE</button>
+        </Link>
        </div>
        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
          <div className='p2'>

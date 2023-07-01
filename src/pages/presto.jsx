@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import rehacktor from '../../public/assets/projects/rehacktor.png'
+import presto from '../../public/assets/projects/presto.png'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 
@@ -9,7 +9,7 @@ const Presto = () => {
     <div  className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10' />
-        <Image className='absolute z-1' fill={true} style={{ objectFit: 'cover'}} src={rehacktor} alt='Rehacktor' />
+        <Image className='absolute z-1' fill={true} style={{ objectFit: 'cover'}} src={presto} alt='Rehacktor' />
         <div className='text-white z-10 p-2 absolute top-[60%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] traslate-y-[-50]'>
           <h2 className='py-2'>Presto</h2>
           <h3> Laravel / Google Cloud / Bootstrap / Mysql / Spatie Media Library</h3>
@@ -20,8 +20,10 @@ const Presto = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>This app was build using Laravel</p>
-       <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
-       <button className='px-8 py-2 mt-4'>CODE</button>
+       {/* <button className='px-8 py-2 mt-4 mr-8'>DEMO</button> */}
+        <Link target='_blanck' href='https://github.com/dininni8319/presto'>
+          <button className='px-8 py-2 mt-4'>CODE</button>
+        </Link>
        </div>
        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
          <div className='p2'>

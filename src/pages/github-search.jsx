@@ -12,7 +12,7 @@ const GithubSearch = () => {
         <Image className='absolute z-1' fill={true} style={{ objectFit: 'cover'}} src={github_search} alt='Rehacktor' />
         <div className='text-white z-10 p-2 absolute top-[60%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] traslate-y-[-50]'>
           <h2 className='py-2'>Github Search App</h2>
-          <h3>React JS / Laravel / Styled Componets / Mysql </h3>
+          <h3>React JS / Styled Componets </h3>
         </div>
      </div>
      <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
@@ -20,8 +20,12 @@ const GithubSearch = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>This app was build using React JS</p>
-       <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
-       <button className='px-8 py-2 mt-4'>CODE</button>
+         <Link target='_blanck' href='http://github-search.salvatore-dininni.com/'>
+          <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
+        </Link>
+        <Link target='_blanck' href='https://github.com/dininni8319/github-search'>
+          <button className='px-8 py-2 mt-4'>CODE</button>
+        </Link>
        </div>
        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
          <div className='p2'>

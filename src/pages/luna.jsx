@@ -19,9 +19,10 @@ const Luna = () => {
        <div className='col-span-4'>
         <p>Project</p>
         <h2>Overview</h2>
-        <p>This app was build using React JS and Django</p>
-       <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
-       <button className='px-8 py-2 mt-4'>CODE</button>
+        <p>Luna Project – a restaurant review application where users can find, rate, and comment on a local restaurants.</p>
+        <Link target='_blanck' href='https://gitlab.propulsion-home.ch/salvatore_dininni/luna'>
+          <button className='px-8 py-2 mt-4'>CODE</button>
+        </Link>
        </div>
        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
          <div className='p2'>
@@ -31,7 +32,13 @@ const Luna = () => {
               <RiRadioButtonFill className='pr-1' />React
             </p>
             <p className='text-gray-600 py-2 flex items-center'>
+              <RiRadioButtonFill className='pr-1' />Redux
+            </p>
+            <p className='text-gray-600 py-2 flex items-center'>
               <RiRadioButtonFill className='pr-1' />Django
+            </p>
+            <p className='text-gray-600 py-2 flex items-center'>
+              <RiRadioButtonFill className='pr-1' />Docker
             </p>
             <p className='text-gray-600 py-2 flex items-center'>
               <RiRadioButtonFill className='pr-1' />Styled Components 

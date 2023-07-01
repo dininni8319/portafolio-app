@@ -12,9 +12,9 @@ const Navbar = () => {
   const [ navBg, setNavBg ] = useState("#ecf0f3")
   const [ linkColor, setLinkColor ] = useState("#1f2937")
   const router = useRouter()
+  const [ logo, setLogo ] = useState(false)
 
   useEffect(() => {
-
     if (
       router.asPath === '/ecommerce' ||
       router.asPath === '/event-app' ||
@@ -29,9 +29,11 @@ const Navbar = () => {
     ) {
       setNavBg('transparent')
       setLinkColor('#ecf0f3')
+      setLogo(true)
     } else {
       setNavBg("#ecf0f3")
       setLinkColor("#1f2937")
+      setLogo(false)
     }
   },[router])
 
@@ -57,10 +59,11 @@ const Navbar = () => {
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
        <Link href='/'>
           <Image 
-            src="/assets/logo2.png" 
+            className=''
+            src={!logo ? '/assets/logo2.png' : '/assets/logo-removed.png'}
             alt="Logo"
-            width='60' 
-            height='60'
+            width={!logo ? '60' : '110'} 
+            height={!logo ? '60' : '110'}
           />
        </Link>
          

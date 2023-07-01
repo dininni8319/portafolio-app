@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import eCommerce from '../../public/assets/projects/e-commerce.png'
 import { RiRadioButtonFill } from 'react-icons/ri'
-import Link from 'next/link'
+
 
 const Ecommerce = () => {
   return (
@@ -20,8 +21,15 @@ const Ecommerce = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>This app was build using React JS and Express Js</p>
-       <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
-       <button className='px-8 py-2 mt-4'>CODE</button>
+        
+        <Link target='_blanck' href='http://ecommerce-mern.salvatore-dininni.com/'>
+          <button className='px-8 py-2 mt-4 mr-8'>
+            DEMO
+          </button>
+        </Link>
+        <Link target='_blanck' href='https://github.com/dininni8319/react-ecommerce'>
+          <button className='px-8 py-2 mt-4'>CODE</button>
+        </Link>
        </div>
        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
          <div className='p2'>

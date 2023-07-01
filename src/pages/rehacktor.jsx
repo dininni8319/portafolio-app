@@ -20,8 +20,12 @@ const Rehacktor = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>This app was build using React JS and Laravel</p>
-       <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
-       <button className='px-8 py-2 mt-4'>CODE</button>
+        <Link target='_blanck' href='https://rehacktor.salvatore-dininni.com/'>
+          <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
+        </Link>
+        <Link target='_blanck' href='https://github.com/dininni8319/rehacktor'>
+          <button className='px-8 py-2 mt-4'>CODE</button>
+        </Link>
        </div>
        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
          <div className='p2'>
