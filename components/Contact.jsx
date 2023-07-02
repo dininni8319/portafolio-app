@@ -6,6 +6,33 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import Link from 'next/link'
 
 const Contact = () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    const { name, email, phone, subject, message } = event.target.elements
+    const data = {
+      name: name.value,
+      email: email.value,
+      phone: phone.value,
+      subject: subject.value,
+      message: message.value
+    }
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data),
+      })
+      if (!res.ok) {
+        throw new Error(`Invalid response: ${res.status}`)
+      }
+      const result = await res.json()
+    } catch (error) {
+      console.log(error)
+    }
+  }
   return (
     <div id='contact' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
@@ -47,13 +74,14 @@ const Contact = () => {
             {/* right */}
             <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
               <div className="p-4">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="grid md:grid-cols-2 gap-5 w-full py-2">
                     <div className='flex flex-col'>
                       <label htmlFor="" className='uppercase text-sm py-2'>Name</label>
                       <input 
                         name='name'
                         type="text" 
+                        required
                         className="border-2 rounded-lg p-3 flex border-gray-300" 
                       />
                     </div>
@@ -71,6 +99,7 @@ const Contact = () => {
                     <input 
                       name="email"
                       type="email" 
+                      required
                       className="border-2 rounded-lg p-3 flex border-gray-300" 
                     />
                   </div>

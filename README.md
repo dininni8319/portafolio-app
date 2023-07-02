@@ -7,7 +7,7 @@
 <h3>Tailwind congifs:</h3>
 → pnpm install -D tailwindcss postcss autoprefixer<br/>
 → npx tailwindcss init -p<br/>
-
+→ pnpm install --save @sendgrid/mail<br/>
 <h3>React Icon</h3>
  → pnpm i react-icon<br/>
 past this code into the tailwind.config.js<br/>
