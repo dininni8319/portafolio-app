@@ -29,11 +29,12 @@ const Contact = () => {
         throw new Error(`Invalid response: ${res.status}`)
       }
       const result = await res.json()
-      alert('Message sent successfully!')
+      alert('Thank you! Your message sent successfully!')
       event.target.reset()
       setTimeout(() => window.scrollTo(0, 0), 1000);
     } catch (error) {
       console.log(error)
+      alert('Something went wrong. Please try again.')
     }
   }
   return (
