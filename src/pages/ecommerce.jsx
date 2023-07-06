@@ -20,7 +20,14 @@ const Ecommerce = () => {
        <div className='col-span-4'>
         <p>Project</p>
         <h2>Overview</h2>
-        <p>This app was build using React JS and Express Js</p>
+        <p>Master MERN Stack Web Development building Ultimate E-commerce app with React Redux Ant Design Firebase NodeJs and MongoDB. Main Features are: Login Registration System, Login with email/password and social login (Google)
+  Admin dashboard and order management system, Products CRUD with advance features including categories, sub-categories, multiple image uploads etc,
+  Plenty of advance searching and filtering options,
+  Star rating system,
+  Cart functionality with both backend/frontend implementation,
+  Checkout with stripe for credit card payments,
+  Checkout with cash on delivery (no online payment required),
+  User dashboard with password update, purchase history, Invoice/PDF download etc.</p>
         
         <Link target='_blanck' href='http://ecommerce-mern.salvatore-dininni.com/'>
           <button className='px-8 py-2 mt-4 mr-8'>

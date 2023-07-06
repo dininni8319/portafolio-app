@@ -19,7 +19,11 @@ const Presto = () => {
        <div className='col-span-4'>
         <p>Project</p>
         <h2>Overview</h2>
-        <p>This app was build using Laravel</p>
+        <p>A web application where users can post items that they wanted to sell, similar to Craig’s List. Users are looking for a platform that is easy to use, accessible across multiple countries, and allows for content analysis.
+        Main implementations: Multi Language, Image Resizing, Application of a watermark, Content Analysis, Face removal, Search Full Text, Announcement Approval System.
+ 
+
+</p>
        {/* <button className='px-8 py-2 mt-4 mr-8'>DEMO</button> */}
         <Link target='_blanck' href='https://github.com/dininni8319/presto'>
           <button className='px-8 py-2 mt-4'>CODE</button>

@@ -16,7 +16,7 @@ const Main = () => {
             Hi,{" I'm"} <span className='text-[#5651e5]'> Salvatore</span>
           </h1>
             <h1 className='py-4 text-gray-700'>
-           {"I'm"} a Full Stack Developer  
+           {"I'm"} a Frontend Developer  
             </h1>
             <p className="py-4 text-gray-600 max-w-[70%] m-auto">
                As a highly skilled and experienced full-stack developer, I possess a deep passion for building robust and innovative web applications. With a solid foundation in both front-end and back-end development, I excel at creating seamless user experiences and scalable solutions.
@@ -31,9 +31,9 @@ const Main = () => {
               <Link target='_blanck' href='mailto:s.dininni@yahoo.com' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <AiOutlineMail />
               </Link>
-              <Link target='_blanck' href='/public/Resume_SD_2023.pdf' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <a target='_blanck' href='/Resume_SD_2023.pdf' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <BsFillPersonLinesFill />
-              </Link>
+              </a>
             </div>
         </div>
       </div>

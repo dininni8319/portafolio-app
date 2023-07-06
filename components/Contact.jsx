@@ -29,6 +29,9 @@ const Contact = () => {
         throw new Error(`Invalid response: ${res.status}`)
       }
       const result = await res.json()
+      alert('Message sent successfully!')
+      event.target.reset()
+      setTimeout(() => window.scrollTo(0, 0), 1000);
     } catch (error) {
       console.log(error)
     }
@@ -48,7 +51,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h2 className='py-2'>Salvatore Dininni</h2>
-                  <p>Full-Stack Developer</p>
+                  <p>Frontend Developer</p>
                   <p className='py-4'>I am available for freelance or a full-time positions. Contact me and {"let's"} talk.</p>
                 </div>
                 <div>
@@ -63,9 +66,9 @@ const Contact = () => {
                     <Link target='_blanck' href='mailto:s.dininni@yahoo.com' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <AiOutlineMail />
                     </Link>
-                    <Link target='_blanck' href='/public/Resume_SD_2023.pdf' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <a target='_blanck' href='/Resume_SD_2023.pdf' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <BsFillPersonLinesFill />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

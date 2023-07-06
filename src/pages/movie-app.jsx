@@ -19,7 +19,7 @@ const MovieApp = () => {
        <div className='col-span-4'>
         <p>Project</p>
         <h2>Overview</h2>
-        <p>This app was build using React JS</p>
+        <p>This application is for streaming movie trailers, it was implemented using React.</p>
         <Link target='_blanck' href='https://github.com/dininni8319/movie-app'>
           <button className='px-8 py-2 mt-4'>CODE</button>
         </Link>

@@ -19,7 +19,7 @@ const EventApp = () => {
        <div className='col-span-4'>
         <p>Project</p>
         <h2>Overview</h2>
-        <p>This app was build using React JS and Laravel</p>
+        <p>This application was build using React JS and Laravel, the main goal here is to set a reminder for an event, later in time.</p>
         <Link target='_blanck' href='https://gitlab.propulsion-home.ch/salvatore_dininni/events-reminder'>
           <button className='px-8 py-2 mt-4'>CODE</button>
         </Link>

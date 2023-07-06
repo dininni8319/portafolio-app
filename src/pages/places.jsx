@@ -19,7 +19,12 @@ const Places = () => {
        <div className='col-span-4'>
         <p>Project</p>
         <h2>Overview</h2>
-        <p>This app was build using React JS and Express Js</p>
+        <p>This Application is from an MERN Udemy course, We built the bestselling React course on Udemy - this course now allows you to take your React knowledge to the next level and build fullstack web apps based on React, NodeJS, MongoDB and Express!
+Building fullstack applications (i.e. frontend + backend) with the MERN stack is very popular - in this course, you will learn it from scratch at the example of a complete project!
+MERN stands for MongoDB, Express.js, React.js and Node.js - and combined, these four technologies allow you to build amazing web applications.
+In this course, we'll build an entire project and you will learn how these different technologies work together step by step. We'll first have a look at all the individual building blocks, so that we then can also combine them all into one amazing application by the end of the course.
+This course also doesn't stop after the basics - instead, you'll also learn how to add file upload, authentication, authorization and how to deploy your application in different ways to different hosting services.
+This course is taught by two instructors - Max (React.js, Node/ Express) and Manuel (MongoDB) who have years of experience of working with these technologies and teaching them to other people. We took and combined our experiences to deliver you the best possible MERN stack course you can find out there.</p>
         <Link target='_blanck' href='http://places.salvatore-dininni.com/'>
           <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
         </Link>

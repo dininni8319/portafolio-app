@@ -19,7 +19,7 @@ const Rehacktor = () => {
        <div className='col-span-4'>
         <p>Project</p>
         <h2>Overview</h2>
-        <p>This app was build using React JS and Laravel</p>
+        <p>This application allows users to search for a game, and share the streaming while they are playing.</p>
         <Link target='_blanck' href='https://rehacktor.salvatore-dininni.com/'>
           <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
         </Link>
