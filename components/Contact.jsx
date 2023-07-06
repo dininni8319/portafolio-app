@@ -48,6 +48,7 @@ const Contact = () => {
             <div className="col-span-3 lg:col-span-2 w-full shadow-xl shadow-gray-400 rounded-xl p-4">
               <div className="lg:p-4 h-full">
                 <div>
+                 { /* eslint-disable @next/next/no-img-element */}
                   <img src="https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGFwdG9wJTIwY29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="/" className="rounded-xl hover:scale-105 easy-in durantion-300" />
                 </div>
                 <div>

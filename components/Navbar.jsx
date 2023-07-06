@@ -128,13 +128,15 @@ const Navbar = () => {
                 <Link href='/#skills'>
                   <li onClick={() => setNav(false)} className='py-4 text-sm'>Skills</li>
                 </Link>
+                <Link href='/#experience'>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">Experience</li>
+                </Link>
                 <Link href='/#projects'>
                   <li onClick={() => setNav(false)} className='py-4 text-sm'>Projects</li>
                 </Link>
                 <Link href='/#contact'>
                   <li onClick={() => setNav(false)} className='py-4 text-sm'>Contact</li>
                 </Link>
-          
               </ul>
               <div className='pt-40'>
                 <p className='uppercase tracking-widest text-[#5651e5]'>{"Let's"} connect</p>
@@ -148,7 +150,7 @@ const Navbar = () => {
                     <Link target='_blanck' href='mailto:s.dininni@yahoo.com' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <AiOutlineMail />
                     </Link>
-                    <Link target='_blanck' href='/public/Resume_SD_2023.pdf' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <Link target='_blanck' href='/Resume_SD_2023.pdf' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <BsFillPersonLinesFill />
                     </Link>
                 </div>
