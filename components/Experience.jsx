@@ -1,8 +1,8 @@
 
 const Experience = () => {
   return (
-      <div id='contact' className='w-full lg:h-screen'>
-          <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
+      <div id='experience' className='w-full lg:h-screen'>
+        <div className='max-w-[1240px] m-auto px-2 py-16 w-full h-full flex flex-col justify-center'>
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
               Experience
             </p>
@@ -87,7 +87,6 @@ const Experience = () => {
       </div>
     </div>
   )
-
 }
 
 export default Experience
