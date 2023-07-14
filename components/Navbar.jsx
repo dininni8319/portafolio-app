@@ -118,7 +118,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className='py-4 flex-col'>
-              <ul className='uppercase'>
+              <ul className='uppercase pb-5'>
                 <Link href='/'>
                   <li onClick={() => setNav(false)} className='py-4 text-sm'>Home</li>
                 </Link>
@@ -138,7 +138,7 @@ const Navbar = () => {
                   <li onClick={() => setNav(false)} className='py-4 text-sm'>Contact</li>
                 </Link>
               </ul>
-              <div className='pt-40'>
+              <div className='pt-25'>
                 <p className='uppercase tracking-widest text-[#5651e5]'>{"Let's"} connect</p>
                 <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                     <Link target='_blanck' href='https://www.linkedin.com/in/salvatoredininni/' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>

@@ -10,7 +10,7 @@ const Presto = () => {
       <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10' />
         <Image className='absolute z-1' fill={true} style={{ objectFit: 'cover'}} src={presto} alt='Rehacktor' />
-        <div className='text-white z-10 p-2 absolute top-[60%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] traslate-y-[-50]'>
+        <div className='text-white z-10 p-2 absolute top-[50%] top-md-[60%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] traslate-y-[-50]'>
           <h2 className='py-2'>Presto</h2>
           <h3> Laravel / Google Cloud / Bootstrap / Mysql / Spatie Media Library</h3>
         </div>
