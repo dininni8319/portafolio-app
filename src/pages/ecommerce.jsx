@@ -29,11 +29,11 @@ const Ecommerce = () => {
   Checkout with cash on delivery (no online payment required),
   User dashboard with password update, purchase history, Invoice/PDF download etc.</p>
         
-        <Link target='_blanck' href='http://ecommerce-mern.salvatore-dininni.com/'>
+        {/* <Link target='_blanck' href='http://ecommerce-mern.salvatore-dininni.com/'>
           <button className='px-8 py-2 mt-4 mr-8'>
             DEMO
           </button>
-        </Link>
+        </Link> */}
         <Link target='_blanck' href='https://github.com/dininni8319/react-ecommerce'>
           <button className='px-8 py-2 mt-4'>CODE</button>
         </Link>
