@@ -19,7 +19,7 @@ const GithubSearch = () => {
        <div className='col-span-4'>
         <p>Project</p>
         <h2>Overview</h2>
-        <p>This application was build using React JS, you can search for a github user, one you click on it, it will redirect you to his profile.</p>
+        <p>This application was created using React JS, you can search github users, once you click on it, you will be redirected to their profile.</p>
          <Link target='_blanck' href='http://github-search.salvatore-dininni.com/'>
           <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
         </Link>
