@@ -9,7 +9,7 @@ const About = () => {
           <p className='uppercase text-xl tracking-widest text-[#5651e5]'>About</p>
           <h2 className='py-2'>Who I am</h2>
             <p className='py-2 text-gray-600'>Hello! {"I’m"} Salvatore Dininni! I currently live in Switzerland.{" I'm "}passionate about Web Technologies and Web Development.</p>
-            <p className='py-2 text-gray-600'>{"I'm"} a Frontend Developer, highly motivated, open to new challenges, quick learner, team-oriented, with good communication skills, and with a good eye for design. Passionate about technology and solving technical challenges. Open for a position as Frontend or Full-Stack developer.</p>
+            <p className='py-2 text-gray-600'>{"I'm"} a Frontend Developer, highly motivated, open to new challenges, quick learner, team-oriented, with good communication skills, and with a good eye for design. Passionate about technology and solving technical challenges. Open for a position as Frontend.</p>
             <p className='py-2 text-gray-600'>My interests lie in solving problems related software Web Applications, and designing the coolest features.</p>
             <Link href='/#projects' className='py-2 text-gray-600 cursor-pointer underline'>Check out my latest projects.</Link>
         </div>
