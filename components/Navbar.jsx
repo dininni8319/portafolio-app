@@ -25,6 +25,7 @@ const Navbar = () => {
       router.asPath === '/places' ||
       router.asPath === '/presto' ||
       router.asPath === '/rehacktor' ||
+      router.asPath === '/newsletter' ||
       router.asPath === '/movie-app' 
     ) {
       setNavBg('transparent')

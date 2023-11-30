@@ -9,6 +9,7 @@ import motion from '../public/assets/projects/motion.png'
 import presto from '../public/assets/projects/presto.png'
 import eventApp from '../public/assets/projects/event-app.png'
 import foodApp from '../public/assets/projects/food-app.png'
+import newsLetter from '../public/assets/projects/newsletter.png'
 import ProjectItem from './ProjectItem'
 
 const Projects = () => {
@@ -19,6 +20,18 @@ const Projects = () => {
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
         <h2 className='py-4'>What {"I have"} Built</h2>
         <div className="grid md:grid-cols-2 gap-14">
+            <ProjectItem
+              src={newsLetter}
+              title='Newsletter'
+              description='Nextjs Application'
+              link='/newsletter'
+            />
+            <ProjectItem
+              src={eventApp}
+              title='Event-App'
+              description='React App'
+              link='/event-app'
+            />
             <ProjectItem
               src={ecommerce}
               title='E-commerce'
@@ -72,12 +85,6 @@ const Projects = () => {
               title='Ordering-App'
               description='React App'
               link='/ordering-app'
-            />
-            <ProjectItem
-              src={eventApp}
-              title='Event-App'
-              description='React App'
-              link='/event-app'
             />
       </div>
     </div>
