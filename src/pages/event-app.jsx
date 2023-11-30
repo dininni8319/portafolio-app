@@ -19,9 +19,12 @@ const EventApp = () => {
        <div className='col-span-4'>
         <p>Project</p>
         <h2>Overview</h2>
-        <p>This application was build using React JS and Laravel, the main goal here is to set a reminder for an event, later in time.</p>
-        <Link target='_blanck' href='https://gitlab.propulsion-home.ch/salvatore_dininni/events-reminder'>
+        <p>This application was build using React JS and Express, the main goal here is to set a reminder for an event, later in time.</p>
+        <Link target='_blanck' href='https://github.com/dininni8319/event-app2.0'>
           <button className='px-8 py-2 mt-4'>CODE</button>
+        </Link>
+        <Link target='_blanck' href='https://event-app2-0.vercel.app/'>
+          <button className='px-8 py-2 mt-4'>DEMO</button>
         </Link>
        </div>
        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
@@ -32,7 +35,7 @@ const EventApp = () => {
               <RiRadioButtonFill className='pr-1' />React
             </p>
              <p className='text-gray-600 py-2 flex items-center'>
-              <RiRadioButtonFill className='pr-1' />Laravel 
+              <RiRadioButtonFill className='pr-1' />Express 
             </p>
              <p className='text-gray-600 py-2 flex items-center'>
               <RiRadioButtonFill className='pr-1' />Styled Componets 
