@@ -23,11 +23,11 @@ const Ecommerce = () => {
         <p>
         Newsletter sign-up form with success message.  
         </p>
-        {/* <Link target='_blanck' href='https://newsletter-tau-two.vercel.app'>
+        <Link target='_blanck' href='https://newsletter-tau-two.vercel.app'>
           <button className='px-8 py-2 mt-4 mr-8'>
             DEMO
           </button>
-        </Link> */}
+        </Link>
         <Link target='_blanck' href='https://github.com/dininni8319/newsletter'>
           <button className='px-8 py-2 mt-4'>CODE</button>
         </Link>
