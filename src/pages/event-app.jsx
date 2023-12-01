@@ -23,9 +23,9 @@ const EventApp = () => {
         <Link target='_blanck' href='https://github.com/dininni8319/event-app2.0'>
           <button className='px-8 py-2 mt-4'>CODE</button>
         </Link>
-        <Link target='_blanck' href='https://event-app2-0.vercel.app/'>
+        {/* <Link target='_blanck' href='https://event-app2-0.vercel.app/'>
           <button className='ms-5 px-8 py-2 mt-4'>DEMO</button>
-        </Link>
+        </Link> */}
        </div>
        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
          <div className='p2'>
