@@ -14,7 +14,7 @@ export default function LocaleSwitcher(params) {
     if (i18n.isInitialized) {
       i18n.changeLanguage("en");
     }
-  }, [])
+  }, [i18n.isInitialized])
   
   return (
     <div className="flex items-center md:ps-3 cursor-pointer">
