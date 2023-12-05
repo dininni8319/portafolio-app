@@ -4,8 +4,10 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import Link from 'next/link'
+import { useTranslation } from 'next-i18next'
 
 const Contact = () => {
+  const { t } = useTranslation()
   const handleSubmit = async (event) => {
     event.preventDefault()
     const { name, email, phone, subject, message } = event.target.elements
@@ -41,9 +43,9 @@ const Contact = () => {
     <div id='contact' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
           <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
-            Contact
+            {t('contact')}
           </p>
-          <h2 className="py-4">Get In Touch</h2>
+          <h2 className="py-4">{t("get_in_touch")}</h2>
           <div className="grid lg:grid-cols-5 gap-8">
             <div className="col-span-3 lg:col-span-2 w-full shadow-xl shadow-gray-400 rounded-xl p-4">
               <div className="lg:p-4 h-full">
@@ -53,11 +55,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <h2 className='py-2'>Salvatore Dininni</h2>
-                  <p>Frontend Developer</p>
-                  <p className='py-4'>I am available for freelance or a full-time positions. Contact me and {"let's"} talk.</p>
+                  <p>{t('developer')}</p>
+                  <p className='py-4'>{t("contanct_parag")}</p>
                 </div>
                 <div>
-                  <p className='uppercase pt-4 text-[#5651e5]'>Connect with me</p>
+                  <p className='uppercase pt-4 text-[#5651e5]'>{t('connect')}</p>
                   <div className='flex items-center justify-between py-4'>
                     <Link target='_blanck' href='https://www.linkedin.com/in/salvatoredininni/' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <FaLinkedinIn />
@@ -75,14 +77,13 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
             {/* right */}
             <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
               <div className="p-4">
                 <form onSubmit={handleSubmit}>
                   <div className="grid md:grid-cols-2 gap-5 w-full py-2">
                     <div className='flex flex-col'>
-                      <label htmlFor="" className='uppercase text-sm py-2'>Name</label>
+                      <label htmlFor="" className='uppercase text-sm py-2'>{t('name')}</label>
                       <input 
                         name='name'
                         type="text" 
@@ -91,7 +92,7 @@ const Contact = () => {
                       />
                     </div>
                     <div className='flex flex-col'>
-                      <label htmlFor="" className='uppercase text-sm py-2'>Phone Number</label>
+                      <label htmlFor="" className='uppercase text-sm py-2'>{t('phone')}</label>
                       <input 
                         name='phone'
                         type="text" 
@@ -100,7 +101,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className='flex flex-col py-2'>
-                    <label htmlFor="" className='uppercase text-sm py-2'>Email</label>
+                    <label htmlFor="" className='uppercase text-sm py-2'>{t('email')}</label>
                     <input 
                       name="email"
                       type="email" 
@@ -110,7 +111,7 @@ const Contact = () => {
                   </div>
 
                   <div className='flex flex-col'>
-                    <label htmlFor="" className='uppercase text-sm py-2'>Subject</label>
+                    <label htmlFor="" className='uppercase text-sm py-2'>{t('subject')}</label>
                     <input 
                       name="subject"
                       type="text" 
@@ -118,7 +119,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className='flex flex-col py-2'>
-                    <label htmlFor="" className='uppercase text-sm py-2'>Message</label>
+                    <label htmlFor="" className='uppercase text-sm py-2'>{t('message')}</label>
                     <textarea 
                       className='border-2 rounded-3 p-3 border-gray-300' 
                       rows='10'
@@ -126,7 +127,7 @@ const Contact = () => {
                     >
                     </textarea>
                   </div>
-                 <button className='w-full p-4 text-gray-100 mt-4'>send message</button>
+                 <button className='w-full p-4 text-gray-100 mt-4'>{t('send')}</button>
                 </form>
               </div>
             </div>

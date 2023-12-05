@@ -63,7 +63,6 @@ const Navbar = () => {
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
        <Link href='/'>
           <Image 
-            className=''
             src={!logo ? '/assets/logo2.png' : '/assets/logo-removed.png'}
             alt="Logo"
             width={!logo ? '60' : '110'} 
@@ -85,13 +84,13 @@ const Navbar = () => {
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
             <Link href='/#experience'>
-              <li className="ml-10 text-sm uppercase hover:border-b">Experience</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">{t('experience')}</li>
             </Link>
             <Link href='/#projects'>
-              <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">{t("projects")}</li>
             </Link>
             <Link href='/#contact'>
-              <li className="ml-10 text-sm uppercase hover:border-b">Contacts</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">{t('contact')}</li>
             </Link>
             <LocaleSwitcher />
           </ul>
@@ -119,7 +118,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div className='border-b border-gray-300 my-4'>
-                <p className='w-[85%] md:w-[90%] py-4'>{"Let's"} build something legendary together!</p>
+                <p className='w-[85%] md:w-[90%] py-4'>{t('let_build')}</p>
               </div>
             </div>
             <div className='py-4 flex-col'>
@@ -134,17 +133,18 @@ const Navbar = () => {
                   <li onClick={() => setNav(false)} className='py-4 text-sm'>Skills</li>
                 </Link>
                 <Link href='/#experience'>
-                  <li onClick={() => setNav(false)} className="py-4 text-sm">Experience</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">{t("experience")}</li>
                 </Link>
                 <Link href='/#projects'>
-                  <li onClick={() => setNav(false)} className='py-4 text-sm'>Projects</li>
+                  <li onClick={() => setNav(false)} className='py-4 text-sm'>{t("projects")}</li>
                 </Link>
                 <Link href='/#contact'>
-                  <li onClick={() => setNav(false)} className='py-4 text-sm'>Contact</li>
+                  <li onClick={() => setNav(false)} className='py-4 text-sm'>{t("contact")}</li>
                 </Link>
+                <LocaleSwitcher />
               </ul>
               <div className='pt-25'>
-                <p className='uppercase tracking-widest text-[#5651e5]'>{"Let's"} connect</p>
+                <p className='uppercase tracking-widest text-[#5651e5]'>{t('connect')}</p>
                 <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                     <Link target='_blanck' href='https://www.linkedin.com/in/salvatoredininni/' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <FaLinkedinIn />

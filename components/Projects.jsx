@@ -11,14 +11,17 @@ import eventApp from '../public/assets/projects/event-app.png'
 import foodApp from '../public/assets/projects/food-app.png'
 import newsLetter from '../public/assets/projects/newsletter.png'
 import ProjectItem from './ProjectItem'
+import { useTranslation } from 'next-i18next'
+
 
 const Projects = () => {
 
+  const { t } = useTranslation()
   return (
     <div id='projects' className='w-full'>
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
-        <h2 className='py-4'>What {"I have"} Built</h2>
+        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>{t('projects')}</p>
+        <h2 className='py-4'>{t('w_build')}</h2>
         <div className="grid md:grid-cols-2 gap-14">
             <ProjectItem
               src={newsLetter}

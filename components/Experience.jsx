@@ -1,12 +1,15 @@
+import { useTranslation } from "next-i18next"
 
 const Experience = () => {
-  return (
+    const { t } = useTranslation()
+
+    return (
       <div id='experience' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full h-full flex flex-col justify-center'>
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
-              Experience
+              {t('experience')}
             </p>
-            <h2 className="py-4">Work Experience</h2>
+            <h2 className="py-4">{t('w_experience')}</h2>
           <ol class="grid md:grid-cols-3 lg:grid-cols-5 gap-2">
                <li class="relative mb-6 sm:mb-0">
                   <div class="flex items-center">

@@ -1,25 +1,35 @@
 import Link from "next/link"
-import { useRouter } from "next/router"
+import { useTranslation } from "next-i18next";
+import { useEffect } from "react";
 
 export default function LocaleSwitcher(params) {
-  const { locales, locale: activeLocale } = useRouter()  
+  const { i18n } = useTranslation();
 
-  const otherLocale = locales.filter(locale => {
-    return locale !== activeLocale && locale !== 'default'
-  })
+  const changeLanguage = (event, language) => {
+    event.preventDefault()
+    i18n.changeLanguage(language);
+  };
 
+  useEffect(() => {
+    i18n.changeLanguage("en");
+  }, [])
+  
   return (
-    <div className="flex items-center ps-3 cursor-pointer">
-      {otherLocale.map(locale => (
+    <div className="flex items-center md:ps-3 cursor-pointer">
         <Link 
-          key={locale} 
+          onClick={(event) => changeLanguage(event,'en')}
           href="/" 
-          locale={locale}
           className="link"
         >
-         {locale}
+         en
         </Link>
-      ))}
+        <Link 
+          onClick={(event) => changeLanguage(event,'it')}
+          href="/" 
+          className="link"
+        >
+         it
+        </Link>
     </div>
   )  
 }
