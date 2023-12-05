@@ -5,6 +5,8 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { useRouter } from 'next/router'
+import { useTranslation } from 'next-i18next'
+import LocaleSwitcher from './LocaleSwitcher'
 
 const Navbar = () => {
   const [ nav, setNav ] = useState(false)
@@ -13,6 +15,7 @@ const Navbar = () => {
   const [ linkColor, setLinkColor ] = useState("#1f2937")
   const router = useRouter()
   const [ logo, setLogo ] = useState(false)
+  const { t } = useTranslation()
 
   useEffect(() => {
     if (
@@ -90,6 +93,7 @@ const Navbar = () => {
             <Link href='/#contact'>
               <li className="ml-10 text-sm uppercase hover:border-b">Contacts</li>
             </Link>
+            <LocaleSwitcher />
           </ul>
           <div onClick={handleNav} className='md:hidden'>
             <AiOutlineMenu size={25} />

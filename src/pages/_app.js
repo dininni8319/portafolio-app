@@ -1,11 +1,14 @@
 import '@/styles/globals.css'
 import Navbar from '../../components/Navbar'
+import { appWithTranslation } from 'next-i18next'
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
-        <Navbar />
+      <Navbar />
       <Component {...pageProps} />
     </>
   )
 }
+
+export default appWithTranslation(App)

@@ -8,6 +8,7 @@
 → pnpm install -D tailwindcss postcss autoprefixer<br/>
 → npx tailwindcss init -p<br/>
 → pnpm install --save @sendgrid/mail<br/>
+
 <h3>React Icon</h3>
  → pnpm i react-icon<br/>
 past this code into the tailwind.config.js<br/>
@@ -26,7 +27,10 @@ copy this into globals.css<br/>
 @tailwind components;<br/>
 @tailwind utilities;<br/>
 
-
+<h3>Internationalization</h3>
+<br>
+- <p>pnpm install next-i18next</p>
+<br>
 <h2>FullStack Developer ___ <span>Salvatore Dininni</span></h2>
 
 <h4>Something about Me<h4>
@@ -56,15 +60,15 @@ I will share GitLab and Github accounts upon request.</p>
 <b>Portfolio Website: <a href="https://salvatore-dininni.com/" >https://salvatore-dininni.com</a></b> 
 
 <h3>My other projects:</h3>
-
+<br>
 <b>MERN Ecommerce App: <a href="http://ecommerce-mern.salvatore-dininni.com/" >http://ecommerce-mern.salvatore-dininni.com/</a></b> 
-
+<br>
 <b>Game Streaming App: <a href="https://rehacktor.salvatore-dininni.com/" >https://rehacktor.salvatore-dininni.com/</a></b> 
-
+<br>
 <b>Search Bar: <a href="http://github-search.salvatore-dininni.com">http://github-search.salvatore-dininni.com</a></b>
-
+<br>
 <b>Task App, React and Laravel Stack: <a href="https://task.salvatore-dininni.com">https://task.salvatore-dininni.com</a></b>
-
+<br>
 <b>Ricorsi App, React and Laravel Stack: <a href="https://ricorsi.salvatore-dininni.com">https://ricorsi.salvatore-dininni.com</a></b>
-
+<br>
 <b>Search Console, React and Laravel Stack: <a href="https://search-console.salvatore-dininni.com">https://search-console.salvatore-dininni.com</a></b>
