@@ -11,7 +11,9 @@ export default function LocaleSwitcher(params) {
   };
 
   useEffect(() => {
-    i18n.changeLanguage("en");
+    if (i18n.isInitialized) {
+      i18n.changeLanguage("en");
+    }
   }, [])
   
   return (
