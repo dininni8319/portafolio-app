@@ -8,12 +8,10 @@ const it = require('./public/locales/it.json');
 i18n
   .use(initReactI18next)
   .init({
-    defaultLanguage: 'en',
-    otherLanguages: ['it'],
-    localeSubpaths: {
-      en: 'en',
-      es: 'it',
-    },
+    fallbackLng: 'en',
+    languages: ['en','it'],
+    debug: false,
+    lng: "en",
     resources: {
       en: {
         translation: en
