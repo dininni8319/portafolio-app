@@ -2,7 +2,7 @@ import '@/styles/globals.css'
 import Navbar from '../../components/Navbar'
 import { appWithTranslation } from 'next-i18next'
 import { I18nextProvider } from 'react-i18next'
-import i18n from '../../i18n'
+import { i18n } from '../../i18n'
 
 function App({ Component, pageProps }) {
   return (

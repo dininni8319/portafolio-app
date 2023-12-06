@@ -3,8 +3,8 @@ const i18n = require('i18next');
 const { initReactI18next } = require('react-i18next');
 // import a json file from public/locales
 // this file will be generated with the command: yarn i18n
-const en = require('./public/locales/en/translation.json');
-const it = require('./public/locales/it/translation.json');
+const en = require('./public/locales/en.json');
+const it = require('./public/locales/it.json');
 i18n
   .use(initReactI18next)
   .init({
