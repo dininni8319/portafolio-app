@@ -5,11 +5,12 @@ const { initReactI18next } = require('react-i18next');
 // this file will be generated with the command: yarn i18n
 const en = require('./public/locales/en.json');
 const it = require('./public/locales/it.json');
+const de = require('./public/locales/de.json');
 i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    languages: ['en','it'],
+    languages: ['en','it', 'de'],
     debug: false,
     lng: "en",
     resources: {
@@ -18,6 +19,9 @@ i18n
       },
       it: {
         translation: it
+      },
+      de: {
+        translation: de
       }
     },
     detection: {
