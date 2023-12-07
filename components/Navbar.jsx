@@ -29,7 +29,8 @@ const Navbar = () => {
       router.asPath === '/presto' ||
       router.asPath === '/rehacktor' ||
       router.asPath === '/newsletter' ||
-      router.asPath === '/movie-app' 
+      router.asPath === '/movie-app' ||
+      router.asPath === '/password-generator' 
     ) {
       setNavBg('transparent')
       setLinkColor('#ecf0f3')
