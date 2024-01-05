@@ -10,6 +10,7 @@ import presto from '../public/assets/projects/presto.png'
 import eventApp from '../public/assets/projects/event-app.png'
 import foodApp from '../public/assets/projects/food-app.png'
 import newsLetter from '../public/assets/projects/newsletter.png'
+import landingPage from '../public/assets/projects/landing-page.png'
 import password from '../public/assets/projects/password-generator.png'
 import ProjectItem from './ProjectItem'
 import { useTranslation } from 'next-i18next'
@@ -84,7 +85,7 @@ const Projects = () => {
               description='Motion React Application'
               link='/motion'
             />
-              <ProjectItem
+            <ProjectItem
               src={luna}
               title='Luna'
               description='React & Django Application'
@@ -95,6 +96,12 @@ const Projects = () => {
               title='Ordering-App'
               description='React App'
               link='/ordering-app'
+            />
+            <ProjectItem
+              src={landingPage}
+              title='Landing Page'
+              description='HTML | CSS'
+              link='/landing-page'
             />
       </div>
     </div>

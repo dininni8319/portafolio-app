@@ -30,7 +30,8 @@ const Navbar = () => {
       router.asPath === '/rehacktor' ||
       router.asPath === '/newsletter' ||
       router.asPath === '/movie-app' ||
-      router.asPath === '/password-generator' 
+      router.asPath === '/password-generator' ||
+      router.asPath === '/landing-page' 
     ) {
       setNavBg('transparent')
       setLinkColor('#ecf0f3')
