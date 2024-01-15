@@ -42,5 +42,7 @@
   "get_in_touch": "Get In Touch",
   "contanct_parag": "I am available for freelance or a full-time positions. Contact me and let's talk.",
   "ecommerce_description": "Master MERN Stack Web Development building Ultimate E-commerce app with React Redux Ant Design Firebase NodeJs and MongoDB. Main Features are: Login Registration System, Login with email/password and social login (Google) Admin dashboard and order management system, Products CRUD with advance features including categories, sub-categories, multiple image uploads etc, Plenty of advance searching and filtering options, Star rating system, Cart functionality with both backend/frontend implementation, Checkout with stripe for credit card payments, Checkout with cash on delivery (no online payment required), User dashboard with password update, purchase history, Invoice/PDF download etc.",
-  "eventapp_description": "This application was build using React JS and Express, the main goal here is to set a reminder for an event, later in time."
+  "eventapp_description": "This application was build using React JS and Express, the main goal here is to set a reminder for an event, later in time.",
+  "email_client": "Application implemented in Angular in which the user can register. Following authentication, the user can view incoming e-mails in their inbox, write new e-mails and reply to those in their inbox.",
+  "whack-bug": "Developed a game called Whack a Bug using HTML, CSS and JavaScript"
 }

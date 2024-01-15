@@ -8,6 +8,29 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import LocaleSwitcher from './LocaleSwitcher'
 
+const routesPaths = (path) => {
+  if (
+    path === '/ecommerce' ||
+    path === '/event-app' ||
+    path === '/github-search' ||
+    path === '/luna' ||
+    path === '/motion' ||
+    path === '/ordering-app' ||
+    path === '/places' ||
+    path === '/presto' ||
+    path === '/rehacktor' ||
+    path === '/newsletter' ||
+    path === '/movie-app' ||
+    path === '/password-generator' ||
+    path === '/landing-page' ||
+    path === '/email-client'  ||
+    path === '/whack-bug' 
+  ) {
+    return true
+  } 
+  return false
+}
+
 const Navbar = () => {
   const [ nav, setNav ] = useState(false)
   const [ shadow, setShadow ] = useState(false)
@@ -18,21 +41,7 @@ const Navbar = () => {
   const { t } = useTranslation()
 
   useEffect(() => {
-    if (
-      router.asPath === '/ecommerce' ||
-      router.asPath === '/event-app' ||
-      router.asPath === '/github-search' ||
-      router.asPath === '/luna' ||
-      router.asPath === '/motion' ||
-      router.asPath === '/ordering-app' ||
-      router.asPath === '/places' ||
-      router.asPath === '/presto' ||
-      router.asPath === '/rehacktor' ||
-      router.asPath === '/newsletter' ||
-      router.asPath === '/movie-app' ||
-      router.asPath === '/password-generator' ||
-      router.asPath === '/landing-page' 
-    ) {
+    if (routesPaths(router.asPath)) {
       setNavBg('transparent')
       setLinkColor('#ecf0f3')
       setLogo(true)

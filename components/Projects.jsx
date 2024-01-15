@@ -11,13 +11,13 @@ import eventApp from '../public/assets/projects/event-app.png'
 import foodApp from '../public/assets/projects/food-app.png'
 import newsLetter from '../public/assets/projects/newsletter.png'
 import landingPage from '../public/assets/projects/landing-page.png'
+import whackBug from '../public/assets/projects/whack-bug.png'
 import password from '../public/assets/projects/password-generator.png'
+import emailClient from '../public/assets/projects/email-client2.png'
 import ProjectItem from './ProjectItem'
 import { useTranslation } from 'next-i18next'
 
-
 const Projects = () => {
-
   const { t } = useTranslation()
   return (
     <div id='projects' className='w-full'>
@@ -25,6 +25,12 @@ const Projects = () => {
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>{t('projects')}</p>
         <h2 className='py-4'>{t('w_build')}</h2>
         <div className="grid md:grid-cols-2 gap-14">
+            <ProjectItem
+              src={emailClient}
+              title='Email Client'
+              description='Angular Application'
+              link='/email-client'
+            />
             <ProjectItem
               src={password}
               title='Password Generator'
@@ -96,6 +102,12 @@ const Projects = () => {
               title='Ordering-App'
               description='React App'
               link='/ordering-app'
+            />
+            <ProjectItem
+              src={whackBug}
+              title='Whack a Bug'
+              description='HTML | CSS | JS'
+              link='/whack-bug'
             />
             <ProjectItem
               src={landingPage}

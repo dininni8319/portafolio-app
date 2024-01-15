@@ -42,5 +42,7 @@
   "get_in_touch": "In Kontakt kommen",
   "contanct_parag": "Ich bin freiberuflich oder als Vollzeitstelle verfügbar. Kontaktieren Sie mich und lassen Sie uns reden.",
   "ecommerce_description": "Meistern Sie MERN Stack Web Development und erstellen Sie die ultimative E-Commerce-App mit React Redux Ant Design Firebase NodeJs und MongoDB. Hauptfunktionen sind: Login-Registrierungssystem, Login mit E-Mail/Passwort und sozialem Login (Google), Admin-Dashboard und Bestellverwaltungssystem, Produkte CRUD mit erweiterten Funktionen wie Kategorien, Unterkategorien, mehrere Bild-Uploads usw., zahlreiche erweiterte Such- und Filteroptionen , Sternebewertungssystem, Warenkorbfunktionalität mit Backend-/Frontend-Implementierung, Checkout mit Stripe für Kreditkartenzahlungen, Checkout mit Nachnahme (keine Online-Zahlung erforderlich), Benutzer-Dashboard mit Passwortaktualisierung, Kaufhistorie, Rechnungs-/PDF-Download usw.",
-  "eventapp_description": "Diese Anwendung wurde mit React JS und Express erstellt. Das Hauptziel besteht hier darin, eine Erinnerung für ein Ereignis zu einem späteren Zeitpunkt einzurichten."
+  "eventapp_description": "Diese Anwendung wurde mit React JS und Express erstellt. Das Hauptziel besteht hier darin, eine Erinnerung für ein Ereignis zu einem späteren Zeitpunkt einzurichten.",
+  "email_client": "In Angular implementierte Anwendung, in der sich der Benutzer registrieren kann. Nach der Authentifizierung kann der Benutzer die laufenden E-Mails in seinem eigenen Postfach anzeigen, neue E-Mails senden und auf die im Postfach befindlichen antworten.",
+  "whack-bug": "Entwicklung eines Spiels namens \"Whack a Bug\" mit HTML, CSS und JavaScript."
 }
