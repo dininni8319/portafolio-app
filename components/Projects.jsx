@@ -79,18 +79,18 @@ const Projects = () => {
               description='React App'
               link='/github-search'
             />
-            <ProjectItem
+            {/* <ProjectItem
               src={movieApp}
               title='Movie-Trailer-App'
               description='React App'
               link='/movie-app'
-            />
-              <ProjectItem
+            /> */}
+              {/* <ProjectItem
               src={motion}
               title='Motion'
               description='Motion React Application'
               link='/motion'
-            />
+            /> */}
             <ProjectItem
               src={luna}
               title='Luna'
@@ -109,12 +109,12 @@ const Projects = () => {
               description='HTML | CSS | JS'
               link='/whack-bug'
             />
-            <ProjectItem
+            {/* <ProjectItem
               src={landingPage}
               title='Landing Page'
               description='HTML | CSS'
               link='/landing-page'
-            />
+            /> */}
       </div>
     </div>
     </div>
