@@ -14,6 +14,7 @@ const About = () => {
             <p className='py-2 text-gray-600'>{t('whoiam_1')}</p>
             <p className='py-2 text-gray-600'>{t('whoiam_2')}</p>
             <p className='py-2 text-gray-600'>{t('whoiam_3')}</p>
+            <p className='py-2 text-gray-600'>{t('whoiam_4')}</p>
             <Link href='/#projects' className='py-2 text-gray-600 cursor-pointer underline'>{t('link_projects')}</Link>
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
