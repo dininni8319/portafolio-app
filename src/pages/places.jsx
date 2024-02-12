@@ -22,9 +22,9 @@ const Places = () => {
         <p>{t('project')}</p>
         <h2>{t('overview')}</h2>
         <p>{t('places_description')}</p>
-        <Link target='_blanck' href='http://places.salvatore-dininni.com/'>
+        {/* <Link target='_blanck' href='http://places.salvatore-dininni.com/'>
           <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
-        </Link>
+        </Link> */}
         <Link target='_blanck' href='https://github.com/dininni8319/frontend-mern-max'>
           <button className='px-8 py-2 mt-4'>{t('code')}</button>
         </Link>

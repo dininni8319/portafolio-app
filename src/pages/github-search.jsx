@@ -22,7 +22,7 @@ const GithubSearch = () => {
         <p className='capitalize'>{t('project')}</p>
         <h2>{t('overview')}</h2>
         <p>{t('githubapp_description')}</p>
-         <Link target='_blanck' href='http://github-search.salvatore-dininni.com/'>
+         <Link target='_blanck' href='https://github-search-green-five.vercel.app/'>
           <button className='px-8 py-2 mt-4 mr-8'>DEMO</button>
         </Link>
         <Link target='_blanck' href='https://github.com/dininni8319/github-search'>
