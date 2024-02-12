@@ -4,12 +4,12 @@
 - pnpm create next-app   <!-- <your app name>  --> 
 - pnpm run dev --> hot reload, and refresh the code
   
-### Tailwind configs:
+## Tailwind configs:
 → pnpm install -D tailwindcss postcss autoprefixer<br/>
 → npx tailwindcss init -p<br/>
 → pnpm install --save @sendgrid/mail<br/>
 
-### React Icon
+## React Icon
  → pnpm i react-icon<br/>
 past this code into the tailwind.config.js<br/>
  content: [
@@ -27,13 +27,13 @@ copy this into globals.css<br>
 @tailwind components;<br/>
 @tailwind utilities;<br/>
 
-### Internationalization
+## Internationalization
 - pnpm install next-i18next
 
 ## Frontend Full-Stack Developer: 
 Salvatore Dininni
 
-### Something about Me
+## Something about Me
 From the sizzling world of the kitchen to the dynamic realm of tech, my journey took an unexpected turn during the pandemic. Embracing the art of coding with TypeScript, the younger cousin of JavaScript, has become my passion. With a deep understanding of frontend technologies, I bring a unique blend of creativity and technical prowess to every project. Currently exploring new opportunities in the frontend landscape – let's create something amazing together!
 
 A Highly Motivated Individual, open to new challenges and quickly learns new technologies. Self-driven, dedicated, and hard-working. Passionate about Web Development, Web Design, and Web Technologies.
@@ -50,17 +50,17 @@ Attended remote Hackademy course, based in Bari, Italy. The technology involved 
 Completed Full-Stack Bootcamp with Propulsion Academy based in Zurich, Switzerland. Learned HTML5, CSS3, SCSS, JavaScript, React, Redux, Python, Django, PostgresSQL, REST Framework, Docker, GitLab, Git, NPM, Node, and Web Deployment. As a final project, I developed a Student Tracker, where professors of the course can keep track of student progress and grades. 
 </p>
 
-### Spoken languages: 
+## Spoken languages: 
 - Italian 
 - English 
 - German
 
-### More details...
+## More details...
 <b>LinkedIn Profile: <a href="https://www.linkedin.com/in/salvatoredininni/" >https://www.linkedin.com/in/salvatoredininni/ </a></b>
 <br>
 <b>Portfolio Website: <a href="https://salvatore-dininni.com/" >https://salvatore-dininni.com</a></b> 
 
-### My other projects:
+## My other projects:
 
 <b>Game Streaming React / Laravel App: <a href="https://rehacktor.vercel.app/" >https://rehacktor.vercel.app</a></b> 
 <br>
