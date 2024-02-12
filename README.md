@@ -1,10 +1,10 @@
 # Portfolio Website
 
-### Start a new Next.js project
-	→ pnpm create next-app  <br/> <!-- <your app name>  --> <br/>
-  → pnpm run dev --> hot reload, and refresh the code<br/>
+## Start a new Next.js project
+- pnpm create next-app   <!-- <your app name>  --> 
+- pnpm run dev --> hot reload, and refresh the code
   
-### Tailwind congifs:
+### Tailwind configs:
 → pnpm install -D tailwindcss postcss autoprefixer<br/>
 → npx tailwindcss init -p<br/>
 → pnpm install --save @sendgrid/mail<br/>
@@ -37,11 +37,11 @@ Salvatore Dininni
 From the sizzling world of the kitchen to the dynamic realm of tech, my journey took an unexpected turn during the pandemic. Embracing the art of coding with TypeScript, the younger cousin of JavaScript, has become my passion. With a deep understanding of frontend technologies, I bring a unique blend of creativity and technical prowess to every project. Currently exploring new opportunities in the frontend landscape – let's create something amazing together!
 
 A Highly Motivated Individual, open to new challenges and quickly learns new technologies. Self-driven, dedicated, and hard-working. Passionate about Web Development, Web Design, and Web Technologies.
-<br/>
+
 <p>
 Attended remote HackJS course, based in Bari, Italy. Topics learned during the part-time course: Advanced Javascript, TDD, Type Coercion, React framework, React Native, Strapi. As a final project, i implemented Rehacktor, a Game Streaming application.
 </p>
-<br/>
+
 <p>
 Attended remote Hackademy course, based in Bari, Italy. The technology involved were HTML5, CSS3, Bootstrap5, PHP, JS, Laravel, Vue, React, and React Native. As a final project, I implemented Presto, an E-commerce announcement application.
 </p>
