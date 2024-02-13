@@ -3,7 +3,14 @@
 ## Start a new Next.js project
 - pnpm create next-app   <!-- <your app name>  --> 
 - pnpm run dev --> hot reload, and refresh the code
-  
+
+## Packages
+- react-icon
+- Tailwind
+- next-i18next
+- @sendgrid/mail
+- framer-motion
+
 ## Tailwind configs:
 → pnpm install -D tailwindcss postcss autoprefixer<br/>
 → npx tailwindcss init -p<br/>

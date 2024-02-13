@@ -13,6 +13,7 @@
     "@sendgrid/mail": "^7.7.0",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
+    "framer-motion": "^11.0.5",
     "i18next": "^23.7.7",
     "next": "13.4.7",
     "next-i18next": "^15.0.0",

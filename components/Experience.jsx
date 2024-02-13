@@ -1,4 +1,5 @@
-import { useTranslation } from "next-i18next"
+import { useTranslation } from "next-i18next";
+import { motion } from "framer-motion";
 
 const Experience = () => {
     const { t } = useTranslation()
@@ -11,7 +12,11 @@ const Experience = () => {
             </p>
             <h2 className="py-4">{t('w_experience')}</h2>
           <ol className="grid md:grid-cols-3 lg:grid-cols-5 gap-2">
-               <li className="relative mb-6 sm:mb-0">
+               <motion.li 
+                 initial={{ opacity: 0 }}
+                 whileInView={{ opacity: 1 }}
+                 viewport={{ once: true }} 
+                 className="relative mb-6 sm:mb-0">
                   <div className="flex items-center">
                       <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
                           <svg className="w-2.5 h-2.5 text-[#5651e5] dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -25,8 +30,12 @@ const Experience = () => {
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August, 2023</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">Coach</p>
                   </div>
-              </li>
-              <li className="relative mb-6 sm:mb-0">
+              </motion.li>
+              <motion.li 
+                 initial={{ opacity: 0 }}
+                 whileInView={{ opacity: 1 }}
+                 viewport={{ once: true }}  
+                 className="relative mb-6 sm:mb-0">
                   <div className="flex items-center">
                       <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
                           <svg className="w-2.5 h-2.5 text-[#5651e5] dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -40,8 +49,12 @@ const Experience = () => {
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August, 2023</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">Computer Science</p>
                   </div>
-              </li>
-              <li className="relative mb-6 sm:mb-0">
+              </motion.li>
+              <motion.li 
+                 initial={{ opacity: 0 }}
+                 whileInView={{ opacity: 1 }}
+                 viewport={{ once: true }}  
+                 className="relative mb-6 sm:mb-0">
                   <div className="flex items-center">
                       <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
                           <svg className="w-2.5 h-2.5 text-[#5651e5] dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -55,8 +68,12 @@ const Experience = () => {
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">May, 2022</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">Full Stack Developer</p>
                   </div>
-              </li>
-              <li className="relative mb-6 sm:mb-0">
+              </motion.li>
+              <motion.li 
+                 initial={{ opacity: 0 }}
+                 whileInView={{ opacity: 1 }}
+                 viewport={{ once: true }}  
+                 className="relative mb-6 sm:mb-0">
                   <div className="flex items-center">
                       <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
                           <svg className="w-2.5 h-2.5 text-[#5651e5] dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -70,8 +87,12 @@ const Experience = () => {
                      <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">October, 2021</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">HackJS Certificate</p>
                   </div>
-              </li>
-               <li className="relative mb-6 sm:mb-0 ">
+              </motion.li>
+               <motion.li 
+                 initial={{ opacity: 0 }}
+                 whileInView={{ opacity: 1 }}
+                 viewport={{ once: true }}  
+                 className="relative mb-6 sm:mb-0 ">
                   <div className="flex items-center">
                       <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
                           <svg className="w-2.5 h-2.5 text-[#5651e5] dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -85,8 +106,12 @@ const Experience = () => {
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">July 2021</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">Hackademy Certificate</p>
                   </div>
-              </li>
-              <li className="relative mb-6 sm:mb-0">
+              </motion.li>
+              <motion.li 
+                 initial={{ opacity: 0 }}
+                 whileInView={{ opacity: 1 }}
+                 viewport={{ once: true }}  
+                 className="relative mb-6 sm:mb-0">
                   <div className="flex items-center">
                       <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
                           <svg className="w-2.5 h-2.5 text-[#5651e5] dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -100,8 +125,7 @@ const Experience = () => {
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">November 2020</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">Full-Stack Developer</p>
                   </div>
-              </li>
-               
+              </motion.li> 
           </ol>
       </div>
     </div>
