@@ -1,49 +1,46 @@
 import { useState, useEffect } from 'react';
 import styles from './MovingIcon.module.css';
 import Image from 'next/image';
-import witchIcon from '../public/assets/witch.png'
+import witchIcon from '../public/assets/witch.png';
 
 const MovingIcon = () => {
   const [animationFlag, setAnimationFlag] = useState(true);
+  const [position, setPosition] = useState(0);
+  const [verticalPosition, setVerticalPosition] = useState(0);
+  const [direction, setDirection] = useState(2); // 1 for forward, -1 for backward
+  const startTime = Date.now();
+  let iconSize = 35;
 
   useEffect(() => {
     const iconElement = document.getElementById("icon");
-    let angle = 0; // Initialize angle for circular motion
-    let position = 0; // Initialize position for moving around the screen
-    let height = 0; // Initialize height for moving around the screen
-    let bottom = 0; // Initialize bottom for moving around the screen
-    const startTime = Date.now();
-
     const moveIcon = () => {
       const currentTime = Date.now();
       const elapsedTime = currentTime - startTime;
-      
-      // Calculate new position based on circular path
-      const radius = 100; // Radius of the circle
-      const centerX = window.innerWidth / 2; // X coordinate of the center
-      const centerY = window.innerHeight / 2; // Y coordinate of the center
-      const x = centerX + radius * Math.cos(angle);
-      const y = centerY + radius * Math.sin(angle);
-      
-      angle += 0.02; // Increment angle to make the icon move around the circle
 
-      position += 2; // Move the icon horizontally
-      height += Math.round(Math.random() * 5); // Move the icon randomly vertically
-      bottom += Math.round(Math.random() * 5); // Move the icon randomly vertically
-      
+      // Change direction when reaching the edges of the screen horizontally
+      if (position >= window.innerWidth || position <= 0) {
+        setPosition(0)
+      } 
+
+      if(verticalPosition >= window.innerHeigth ) {
+        setDirection(direction => -direction);
+      }
+
+      // Update horizontal position based on direction
+      setPosition(position => position + 1.5 * direction); // Adjust horizontal speed as needed
+
+      // Move downward slowly
+      setVerticalPosition(verticalPosition => verticalPosition + 0.02); // Adjust downward speed as needed
+
       if (iconElement) {
         iconElement.style.left = `${position}px`;
-        iconElement.style.top = `${y + height}px`; // Add random vertical movement to circular motion
-        iconElement.style.bottom = `${bottom}px`; // Add random vertical movement to circular motion
+        iconElement.style.top = `${verticalPosition}px`;
 
-        if (elapsedTime < 30000 && animationFlag) {
+        if (elapsedTime < 10000 && animationFlag) {``
+
           window.requestAnimationFrame(moveIcon);
         } else {
           iconElement.style.display = 'none';
-        }
-        
-        if (position >= window.innerWidth) {
-          position = 0;
         }
       }
     };
@@ -52,17 +49,17 @@ const MovingIcon = () => {
 
     setTimeout(() => {
       setAnimationFlag(false);
-    }, 30000);
+    }, 10000);
 
     return () => {
       cancelAnimationFrame(animationFrameId);
     };
-  }, [animationFlag]);
+  }, [animationFlag, position, verticalPosition]);
 
   return (
-      <div id="icon" className={styles.icon}>
-        <Image className="w-20 h-20" src={witchIcon} alt='/'/>
-      </div>
+    <div id="icon" className={styles.icon}>
+      <Image width={iconSize} heigth={iconSize} src={witchIcon} alt='/'/>
+    </div>
   );
 };
 
