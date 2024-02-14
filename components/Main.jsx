@@ -18,7 +18,7 @@ const Main = () => {
       scale: 1,
       opacity: 1,
       transition: {
-        delay: .5
+        delay: .4
       }
     }
   }
