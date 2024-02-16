@@ -45,5 +45,6 @@
   "contanct_parag": "Sono disponibile per posizioni da freelance o a tempo pieno. Contattatemi e parliamone.",
   "eventapp_description": "Questa applicazione è stata creata utilizzando React JS ed Express, l'obiettivo principale qui è impostare un promemoria per un evento, ed inviare una email in un secondo momento.",
   "email_client": "Applicazione implementata in Angular in cui l'utente può registrarsi. Dopo l'autenticazione, l'utente può visualizzare le e-mail in arrivo nella propria casella di posta, scrivere nuove e-mail e rispondere a quelle nella casella di posta.",
-  "whack-bug": "Sviluppo di un gioco chiamato \"Whack a Bug\" con HTML, CSS e JavaScript."
+  "whack-bug": "Sviluppo di un gioco chiamato \"Whack a Bug\" con HTML, CSS e JavaScript.",
+  "about-me": "Chi sono"
 }

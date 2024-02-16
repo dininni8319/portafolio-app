@@ -3,8 +3,9 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import Link from 'next/link'
-import { useTranslation } from 'next-i18next'
+import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
   const { t } = useTranslation()
@@ -73,6 +74,9 @@ const Contact = () => {
                     <a target='_blanck' href='/Resume_SD_2024.pdf' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <BsFillPersonLinesFill />
                     </a>
+                    <Link href="https://api.whatsapp.com/send?phone=41762160203" className="hidden md:block" target='_blanck'>
+                      <FaWhatsapp size={35} color="green"  />
+                    </Link>
                   </div>
                 </div>
               </div>
