@@ -38,7 +38,7 @@ const Main = () => {
             <p className="py-4 text-gray-600 max-w-[70%] m-auto">
               {t('description')}  
             </p>
-            <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+            <div className='flex items-center justify-around max-w-[330px] m-auto py-4'>
               <Link target='_blanck' href='https://www.linkedin.com/in/salvatoredininni/' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <FaLinkedinIn />
               </Link>
