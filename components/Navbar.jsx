@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
@@ -81,7 +81,10 @@ const Navbar = () => {
           />
        </Link>
          
-        <div>
+        <div className="md:flex items-center">
+          <Link href="https://api.whatsapp.com/send?phone=41762160203" className="hidden md:block" target='_blanck'>
+            <FaWhatsapp size={30} color="green"  />
+          </Link>
           <ul 
             style={{ color: `${linkColor}` }}
             className='hidden md:flex'>
@@ -154,7 +157,7 @@ const Navbar = () => {
                 </Link>
                 <LocaleSwitcher />
               </ul>
-              <div className='pt-25'>
+              <div className='pt-22'>
                 <p className='uppercase tracking-widest text-[#5651e5]'>{t('connect')}</p>
                 <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                     <Link target='_blanck' href='https://www.linkedin.com/in/salvatoredininni/' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
@@ -168,6 +171,9 @@ const Navbar = () => {
                     </Link>
                     <Link target='_blanck' href='/Resume_SD_2024.pdf' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <BsFillPersonLinesFill />
+                    </Link>
+                    <Link href="https://api.whatsapp.com/send?phone=41762160203" target='_blanck' className="px-2">
+                      <FaWhatsapp size={35} color="green"  />
                     </Link>
                 </div>
               </div>
