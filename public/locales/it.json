@@ -47,5 +47,10 @@
   "email_client": "Applicazione implementata in Angular in cui l'utente può registrarsi. Dopo l'autenticazione, l'utente può visualizzare le e-mail in arrivo nella propria casella di posta, scrivere nuove e-mail e rispondere a quelle nella casella di posta.",
   "whack-bug": "Sviluppo di un gioco chiamato \"Whack a Bug\" con HTML, CSS e JavaScript.",
   "about-me": "Chi sono",
-  "services": "Servizi"
-}
+  "services": "Servizi",
+  "prov_services": "Lista dei Services",
+  "hosting-description" : "Sono orgogliosi di offrire un servizio di hosting web completo che permette a imprese e privati di stabilire una solida presenza online in modo semplice. Con la mia gamma completa di funzionalità, mi occupo di ogni aspetto del tuo percorso online, dalla creazione del dominio alla gestione delle email e oltre.",
+  "service-app-creation":"Creazione di Siti ed Applicationi Web",
+  "restyling-description": "Avete già un sito web e volete renderlo accattivante per attirare nuovi clienti. Sono a vostra disposizione.",
+  "app-creation-description": "Sono esperto nella creazione di applicazioni e siti web moderni. Inoltre, possiedo una conoscenza approfondita di tecnologie moderne come React, Angular e Laravel. Per ulteriori informazioni non esitate a contattarmi."
+}  

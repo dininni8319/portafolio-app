@@ -10,6 +10,7 @@
 - next-i18next
 - @sendgrid/mail
 - framer-motion
+- lord-icon
 
 ## Tailwind configs:
 → pnpm install -D tailwindcss postcss autoprefixer<br/>

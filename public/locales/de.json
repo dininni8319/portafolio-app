@@ -47,5 +47,10 @@
   "email_client": "In Angular implementierte Anwendung, in der sich der Benutzer registrieren kann. Nach der Authentifizierung kann der Benutzer die laufenden E-Mails in seinem eigenen Postfach anzeigen, neue E-Mails senden und auf die im Postfach befindlichen antworten.",
   "whack-bug": "Entwicklung eines Spiels namens \"Whack a Bug\" mit HTML, CSS und JavaScript.",
   "about-me": "Über mich",
-  "services": "Leistungen"
+  "services": "Leistungen",
+  "prov_services": "Geleistete Dienste",
+  "service-app-creation":"Erstellung von Websites und Webanwendungen",
+  "restyling-description": "Sie haben bereits eine Website und möchten sie attraktiv gestalten, um neue Kunden anzuziehen. Ich bin für Sie da.",
+  "app-creation-description": "Ich bin Experte für die Erstellung moderner Anwendungen und Websites. Ich bin auch ein Experte für moderne Technologien wie React, Angular und Laravel. Für weitere Informationen zögern Sie bitte nicht, mich zu kontaktieren."
+
 }
