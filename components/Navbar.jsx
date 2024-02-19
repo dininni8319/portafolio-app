@@ -53,8 +53,8 @@ const Navbar = () => {
     <div
       style={{ backgroundColor: `${navBg}` }}
       className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : "fixed w-full h-20 z-[100]"}>
-      <div className='ms-2 grid grid-cols-5 justify-between items-center w-full h-full px-1 2xl:px-16'>
-        <div className='col-span-1 flex items-center justify-between'>
+      <div className='ms-2 md:grid md:grid-cols-5 justify-between items-center w-full h-full px-1 2xl:px-16'>
+        <div className='md:col-span-1 flex items-center justify-between mt-2'>
           <Link href='/'>
               <Image 
                 src={!logo ? '/assets/logo2.png' : '/assets/logo-removed.png'}
@@ -70,8 +70,11 @@ const Navbar = () => {
               </span>
               {"/>"}
           </h3>}
+          <div onClick={handleNav} className='md:hidden px-2'>
+            <AiOutlineMenu size={25} /> 
+          </div>
         </div>
-        <div className="md:flex col-span-4 justify-end items-center">
+        <div className="md:flex md:col-span-4 justify-end items-center">
          {width > 1000 && <Link href="https://api.whatsapp.com/send?phone=41762160203" className="hidden md:block px-1" target='_blanck'>
             <FaWhatsapp size={30} color="green"  />
           </Link>}
@@ -100,9 +103,6 @@ const Navbar = () => {
               <li className="ml-4 text-sm uppercase hover:border-b">{t('contact')}</li>
             </Link>
             <LocaleSwitcher />
-            <div onClick={handleNav} className='md:hidden'>
-              <AiOutlineMenu size={25} />
-            </div>
           </ul>
         </div>
       </div>
@@ -111,7 +111,7 @@ const Navbar = () => {
            ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[65%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
            : 'fixed left-[-100%] top-0 p-10 ease-in duration-500' }>
             <div>
-              <div className='flex w-full items-center justify-between'>
+              <div className='flex w-full items-center justify-between bg-red-500'>
                <Link href='/' onClick={() => setNav(false)}>
                   <Image 
                       src='/assets/logo2.png' 
