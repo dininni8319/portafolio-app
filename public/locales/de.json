@@ -46,5 +46,6 @@
   "eventapp_description": "Diese Anwendung wurde mit React JS und Express erstellt. Das Hauptziel besteht hier darin, eine Erinnerung für ein Ereignis zu einem späteren Zeitpunkt einzurichten.",
   "email_client": "In Angular implementierte Anwendung, in der sich der Benutzer registrieren kann. Nach der Authentifizierung kann der Benutzer die laufenden E-Mails in seinem eigenen Postfach anzeigen, neue E-Mails senden und auf die im Postfach befindlichen antworten.",
   "whack-bug": "Entwicklung eines Spiels namens \"Whack a Bug\" mit HTML, CSS und JavaScript.",
-  "about-me": "Über mich"
+  "about-me": "Über mich",
+  "services": "Leistungen"
 }

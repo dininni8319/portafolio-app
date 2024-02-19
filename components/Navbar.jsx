@@ -53,52 +53,57 @@ const Navbar = () => {
     <div
       style={{ backgroundColor: `${navBg}` }}
       className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : "fixed w-full h-20 z-[100]"}>
-      <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Link href='/'>
-            <Image 
-              src={!logo ? '/assets/logo2.png' : '/assets/logo-removed.png'}
-              alt="Logo"
-              width={!logo ? '60' : '110'} 
-              height={!logo ? '60' : '110'}
-            />
-        </Link> 
-       {width > 1000 && <h3 className='hidden md:block text-gray-500'>
-        {"<"}
-          <span className='px-1 text-[#5651e5]'>
-            Freelancer
-          </span>
-          {"/>"}
-        </h3>}
-        <div className="md:flex items-center">
-          <Link href="https://api.whatsapp.com/send?phone=41762160203" className="hidden md:block" target='_blanck'>
+      <div className='ms-2 grid grid-cols-5 justify-between items-center w-full h-full px-1 2xl:px-16'>
+        <div className='col-span-1 flex items-center justify-between'>
+          <Link href='/'>
+              <Image 
+                src={!logo ? '/assets/logo2.png' : '/assets/logo-removed.png'}
+                alt="Logo"
+                width={!logo ? '60' : '110'} 
+                height={!logo ? '60' : '110'}
+              />
+          </Link> 
+          {width > 1000 && <h3 className='hidden md:block text-gray-500'>
+            {"<"}
+              <span className='px-1 text-[#5651e5]'>
+                Freelancer
+              </span>
+              {"/>"}
+          </h3>}
+        </div>
+        <div className="md:flex col-span-4 justify-end items-center">
+         {width > 1000 && <Link href="https://api.whatsapp.com/send?phone=41762160203" className="hidden md:block px-1" target='_blanck'>
             <FaWhatsapp size={30} color="green"  />
-          </Link>
+          </Link>}
           <ul 
             style={{ color: `${linkColor}` }}
             className='hidden md:flex'>
             <Link href='/'>
-              <li className="ml-5 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-4 text-sm uppercase hover:border-b">Home</li>
             </Link>
              <Link href='/#about'>
-              <li className="ml-5 text-sm uppercase hover:border-b">{t('about-me')}</li>
+              <li className="ml-4 text-sm uppercase hover:border-b">{t('about-me')}</li>
             </Link>
             <Link href='/#skills'>
-              <li className="ml-5 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-4 text-sm uppercase hover:border-b">Skills</li>
+            </Link>
+            <Link href='/#services'>
+              <li onClick={() => setNav(false)} className="ml-3 text-sm uppercase hover:border-b">{t("services")}</li>
             </Link>
             <Link href='/#experience'>
-              <li className="ml-5 text-sm uppercase hover:border-b">{t('experience')}</li>
+              <li className="ml-4 text-sm uppercase hover:border-b">{t('experience')}</li>
             </Link>
             <Link href='/#projects'>
-              <li className="ml-5 text-sm uppercase hover:border-b">{t("projects")}</li>
+              <li className="ml-4 text-sm uppercase hover:border-b">{t("projects")}</li>
             </Link>
             <Link href='/#contact'>
-              <li className="ml-5 text-sm uppercase hover:border-b">{t('contact')}</li>
+              <li className="ml-4 text-sm uppercase hover:border-b">{t('contact')}</li>
             </Link>
             <LocaleSwitcher />
+            <div onClick={handleNav} className='md:hidden'>
+              <AiOutlineMenu size={25} />
+            </div>
           </ul>
-          <div onClick={handleNav} className='md:hidden'>
-            <AiOutlineMenu size={25} />
-          </div>
         </div>
       </div>
        <div className={nav ? 'fixed left-0 top-0 h-screen w-full bg-black/70' : ''}>
@@ -134,6 +139,9 @@ const Navbar = () => {
                 </Link>
                 <Link href='/#skills'>
                   <li onClick={() => setNav(false)} className='py-4 text-sm'>Skills</li>
+                </Link>
+                <Link href='/#services'>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">{t("services")}</li>
                 </Link>
                 <Link href='/#experience'>
                   <li onClick={() => setNav(false)} className="py-4 text-sm">{t("experience")}</li>

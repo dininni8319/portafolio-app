@@ -46,5 +46,6 @@
   "eventapp_description": "This application was build using React JS and Express, the main goal here is to set a reminder for an event, later in time.",
   "email_client": "Application implemented in Angular in which the user can register. Following authentication, the user can view incoming e-mails in their inbox, write new e-mails and reply to those in their inbox.",
   "whack-bug": "Developed a game called Whack a Bug using HTML, CSS and JavaScript",
-  "about-me": "About Me"
+  "about-me": "About Me",
+  "services": "Services"
 }
