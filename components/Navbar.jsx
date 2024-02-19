@@ -63,9 +63,9 @@ const Navbar = () => {
                 height={!logo ? '60' : '110'}
               />
           </Link> 
-          {width > 1000 && <h3 className='hidden md:block text-gray-500'>
+          {width > 1000 && <h3 className='hidden md:block text-gray-600 text-2xl'>
             {"<"}
-              <span className='px-1 text-[#5651e5]'>
+              <span className='px-1 text-[#5651e5] text-2xl font-bold'>
                 Freelancer
               </span>
               {"/>"}

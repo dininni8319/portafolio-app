@@ -1,12 +1,27 @@
 import { useTranslation } from "next-i18next";
-import { FaCode, FaGlobe, FaMobileAlt, FaServer } from "react-icons/fa";
+import { FaGlobe, FaServer } from "react-icons/fa";
 import { SiProgress } from "react-icons/si";
+import { motion } from 'framer-motion';
+import { useInView } from "react-intersection-observer";
 
 const Services = () => { 
   const { t } = useTranslation();
 
+  const { ref, inView } = useInView()
+  const variants = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 50 },
+  };
+
   return (
-    <div id='services' className='w-full lg:h-screen'>
+    <motion.div 
+        id='services' 
+        ref={ref}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={variants}
+        transition={{ duration: 1 }}
+        className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full h-full flex flex-col justify-center'>
           <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
               {t('services')}
@@ -40,7 +55,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

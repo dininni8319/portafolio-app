@@ -11,6 +11,7 @@
 - @sendgrid/mail
 - framer-motion
 - lord-icon
+- react-intersection-observer
 
 ## Tailwind configs:
 → pnpm install -D tailwindcss postcss autoprefixer<br/>
