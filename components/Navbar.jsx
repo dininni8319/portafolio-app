@@ -1,35 +1,15 @@
-import React, { useState, useEffect } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
-import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
-import { useRouter } from 'next/router'
-import { useTranslation } from 'next-i18next'
-import LocaleSwitcher from './LocaleSwitcher'
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
+import LocaleSwitcher from './LocaleSwitcher';
+import { paths } from '../src/utils';
+import { useWidth } from '../src/hooks/window-size';
 
-const routesPaths = (path) => {
-  if (
-    path === '/ecommerce' ||
-    path === '/event-app' ||
-    path === '/github-search' ||
-    path === '/luna' ||
-    path === '/motion' ||
-    path === '/ordering-app' ||
-    path === '/places' ||
-    path === '/presto' ||
-    path === '/rehacktor' ||
-    path === '/newsletter' ||
-    path === '/movie-app' ||
-    path === '/password-generator' ||
-    path === '/landing-page' ||
-    path === '/email-client'  ||
-    path === '/whack-bug' 
-  ) {
-    return true
-  } 
-  return false
-}
 
 const Navbar = () => {
   const [ nav, setNav ] = useState(false)
@@ -39,9 +19,10 @@ const Navbar = () => {
   const router = useRouter()
   const [ logo, setLogo ] = useState(false)
   const { t } = useTranslation()
-
+  const width = useWidth();
+  
   useEffect(() => {
-    if (routesPaths(router.asPath)) {
+    if (paths(router.asPath)) {
       setNavBg('transparent')
       setLinkColor('#ecf0f3')
       setLogo(true)
@@ -50,6 +31,7 @@ const Navbar = () => {
       setLinkColor("#1f2937")
       setLogo(false)
     }
+    
   },[router])
 
   const handleNav = () => {
@@ -72,15 +54,21 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : "fixed w-full h-20 z-[100]"}>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-       <Link href='/'>
-          <Image 
-            src={!logo ? '/assets/logo2.png' : '/assets/logo-removed.png'}
-            alt="Logo"
-            width={!logo ? '60' : '110'} 
-            height={!logo ? '60' : '110'}
-          />
-       </Link>
-         
+        <Link href='/'>
+            <Image 
+              src={!logo ? '/assets/logo2.png' : '/assets/logo-removed.png'}
+              alt="Logo"
+              width={!logo ? '60' : '110'} 
+              height={!logo ? '60' : '110'}
+            />
+        </Link> 
+       {width > 1000 && <h3 className='hidden md:block text-gray-500'>
+        {"<"}
+          <span className='px-1 text-[#5651e5]'>
+            Freelancer
+          </span>
+          {"/>"}
+        </h3>}
         <div className="md:flex items-center">
           <Link href="https://api.whatsapp.com/send?phone=41762160203" className="hidden md:block" target='_blanck'>
             <FaWhatsapp size={30} color="green"  />
@@ -89,22 +77,22 @@ const Navbar = () => {
             style={{ color: `${linkColor}` }}
             className='hidden md:flex'>
             <Link href='/'>
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-5 text-sm uppercase hover:border-b">Home</li>
             </Link>
              <Link href='/#about'>
-              <li className="ml-10 text-sm uppercase hover:border-b">{t('about-me')}</li>
+              <li className="ml-5 text-sm uppercase hover:border-b">{t('about-me')}</li>
             </Link>
             <Link href='/#skills'>
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-5 text-sm uppercase hover:border-b">Skills</li>
             </Link>
             <Link href='/#experience'>
-              <li className="ml-10 text-sm uppercase hover:border-b">{t('experience')}</li>
+              <li className="ml-5 text-sm uppercase hover:border-b">{t('experience')}</li>
             </Link>
             <Link href='/#projects'>
-              <li className="ml-10 text-sm uppercase hover:border-b">{t("projects")}</li>
+              <li className="ml-5 text-sm uppercase hover:border-b">{t("projects")}</li>
             </Link>
             <Link href='/#contact'>
-              <li className="ml-10 text-sm uppercase hover:border-b">{t('contact')}</li>
+              <li className="ml-5 text-sm uppercase hover:border-b">{t('contact')}</li>
             </Link>
             <LocaleSwitcher />
           </ul>
@@ -136,12 +124,13 @@ const Navbar = () => {
               </div>
             </div>
             <div className='py-4 flex-col'>
+              {/* mobile */}
               <ul className='uppercase pb-5'>
                 <Link href='/'>
                   <li onClick={() => setNav(false)} className='py-4 text-sm'>Home</li>
                 </Link>
                 <Link href='/#about'>
-                  <li onClick={() => setNav(false)} className='py-4 text-sm'>About Me</li>
+                  <li onClick={() => setNav(false)} className='py-4 text-sm'>{t('about-me')}</li>
                 </Link>
                 <Link href='/#skills'>
                   <li onClick={() => setNav(false)} className='py-4 text-sm'>Skills</li>
@@ -172,8 +161,8 @@ const Navbar = () => {
                     <Link target='_blanck' href='/Resume_SD_2024.pdf' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <BsFillPersonLinesFill />
                     </Link>
-                    <Link href="https://api.whatsapp.com/send?phone=41762160203" target='_blanck' className="px-2">
-                      <FaWhatsapp size={35} color="green"  />
+                    <Link href="https://api.whatsapp.com/send?phone=41762160203" target='_blanck'>
+                      <FaWhatsapp size={40} className='rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-110 ease-in duration-300'  />
                     </Link>
                 </div>
               </div>

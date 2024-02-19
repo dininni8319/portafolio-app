@@ -5,6 +5,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { motion } from 'framer-motion'
+import { FaWhatsapp } from 'react-icons/fa'
 
 const Main = () => {
   const { t } = useTranslation()
@@ -51,6 +52,9 @@ const Main = () => {
               <a target='_blanck' href='/Resume_SD_2024.pdf' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <BsFillPersonLinesFill />
               </a>
+              <Link href="https://api.whatsapp.com/send?phone=41762160203" target='_blanck'>
+                <FaWhatsapp size={40} className='rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-110 ease-in duration-300'  />
+              </Link>
             </div>
         </div>
       </div>

@@ -46,7 +46,7 @@ html {
 }
 
 .link {
-  @apply transition-all duration-300 ease-in-out ms-2 text-sm 
+  @apply transition-all duration-300 ease-in-out text-sm 
   hover:scale-110
 }
 

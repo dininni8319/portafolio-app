@@ -16,13 +16,13 @@ export default function LocaleSwitcher(params) {
   }, [i18n.isInitialized])
   
   return (
-    <div className="flex items-center md:ps-3 cursor-pointer">
+    <div className="flex justify-between md:justify-around items-center cursor-pointer w-24">
         <Link 
           onClick={(event) => changeLanguage(event,'en')}
           href="/" 
           className={`link ${active === 'en'  ? 'text-yellow-500 font-semibold' : 'text-[#5651e5] hover:text-[#628be5]' }`}
         >
-         en
+          en
         </Link>
         <Link 
           onClick={(event) => changeLanguage(event,'it')}
