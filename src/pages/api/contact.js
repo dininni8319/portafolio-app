@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   });
 
   const message = `
-  Name: ${req.body.name}\r\n
+    Name: ${req.body.name}\r\n
     Subject: ${req.body.subject}\r\n
     Email: ${req.body.email}\r\n
     Phone: ${req.body.phone}\r\n
@@ -29,6 +29,7 @@ export default async function handler(req, res) {
       subject: `New message from ${req.body.subject}`,
       html: message.replace(/\r\n/g, '<br />'),
     });
+    return res.status(200).json({ success: true });
   
   } catch (error) {
     console.error('Error sending email:');
