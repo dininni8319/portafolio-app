@@ -6,19 +6,23 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { FaWhatsapp } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
   const { t } = useTranslation()
+  
   const handleSubmit = async (event) => {
     event.preventDefault()
-    const { name, email, phone, subject, message } = event.target.elements
+    const { name, email, phone, subject, message, service } = event.target.elements
     const data = {
       name: name.value,
       email: email.value,
       phone: phone.value,
       subject: subject.value,
+      service: service.value,
       message: message.value
     }
+    console.log("🚀 ~ handleSubmit ~ data:", data)
 
     try {
       const res = await fetch('/api/contact', {
@@ -29,10 +33,11 @@ const Contact = () => {
         body: JSON.stringify(data),
       })
       if (!res.ok) {
+        toast.error('Ocorreu um erro ao enviar o formulário!')
         throw new Error(`Invalid response: ${res.status}`)
       }
       const result = await res.json()
-      alert('Thank you! Your message sent successfully!')
+      toast.success('Thank you! Your message sent successfully!')
       event.target.reset()
       setTimeout(() => window.scrollTo(0, 0), 1000);
     } catch (error) {
@@ -85,6 +90,22 @@ const Contact = () => {
             <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
               <div className="p-4">
                 <form onSubmit={handleSubmit}>
+                  <div className='flex flex-col'>
+                    <label htmlFor="contact-services" className='uppercase text-sm py-2'>{t('services')}</label>
+                    <select 
+                      name='service'
+                      id="contact-services"
+                      type="text" 
+                      required
+                      defaultValue="select_service"
+                      className="border-2 rounded-lg p-3 flex border-gray-300" 
+                    >
+                      <option value="select_service" disabled>{t('select_service')}</option>
+                      <option value="Web development">{t('web_dev')}</option>
+                      <option value="Restyling">{t('restyling_dev')}</option>
+                      <option value="Hosting">{t('hosting')}</option>
+                    </select>
+                  </div>
                   <div className="grid md:grid-cols-2 gap-5 w-full py-2">
                     <div className='flex flex-col'>
                       <label htmlFor="" className='uppercase text-sm py-2'>{t('name')}</label>
@@ -138,9 +159,9 @@ const Contact = () => {
           </div>
           <div className='flex justify-center py-12'>
             <Link href='/'>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                   <HiOutlineChevronDoubleUp size={30} className='text-[#5651e5]' />
-                </div>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <HiOutlineChevronDoubleUp size={30} className='text-[#5651e5]' />
+              </div>
             </Link>
           </div>
         </div>

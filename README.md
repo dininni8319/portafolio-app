@@ -12,6 +12,10 @@
 - framer-motion
 - lord-icon
 - react-intersection-observer
+- toastify  
+
+## Install toastify
+- pnpm install --save react-toastify
 
 ## Tailwind configs:
 → pnpm install -D tailwindcss postcss autoprefixer<br/>

@@ -3,7 +3,7 @@
   "skills": "Skills",
   "projects": "projects",
   "project": "Project",
-  "contact": "contacts",
+  "contact": "contact",
   "developer": "Frontend Developer",
   "name": "name",
   "message": "message",
@@ -52,5 +52,9 @@
   "hosting-description" : "I am proud to offer an all-inclusive web hosting service that empowers businesses and individuals to establish a robust online presence effortlessly. With our comprehensive suite of features, I cater to every aspect of your online journey, from domain creation to email management and beyond.",
   "service-app-creation":"Creation of websites and web applications",
   "restyling-description": "You already have a website and want to make it attractive to attract new customers. I am at your disposal.",
-  "app-creation-description": "I am an expert in creating modern applications and websites. Additionally, I am well-versed in modern technologies such as React, Angular, and Laravel. For further information, please do not hesitate to contact me."
+  "app-creation-description": "I am an expert in creating modern applications and websites. Additionally, I am well-versed in modern technologies such as React, Angular, and Laravel. For further information, please do not hesitate to contact me.",
+  "select_service": "Select a type of service",
+  "restyling_dev": "Restyling",
+  "web_dev": "App or Web Development",
+  "hosting": "Hosting"
 }

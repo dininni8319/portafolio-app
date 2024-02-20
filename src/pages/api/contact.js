@@ -8,6 +8,7 @@ export default async function handler(req, res) {
     Subject: ${req.body.subject}\r\n
     Email: ${req.body.email}\r\n
     Phone: ${req.body.phone}\r\n
+    Service:  ${req.body.service}\r\n
     Message:  ${req.body.message}\r\n
   `;
 
