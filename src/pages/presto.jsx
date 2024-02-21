@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import presto from '../../public/assets/projects/presto.png'
+import presto from '../../public/assets/projects/pronto.jpg'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'

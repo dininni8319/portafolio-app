@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import newsletter from '../../public/assets/projects/newsletter.png'
+import newsletter from '../../public/assets/projects/newsletter.jpg'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import { useTranslation } from 'next-i18next'
 

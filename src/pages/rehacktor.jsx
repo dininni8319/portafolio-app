@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import rehacktor from '../../public/assets/projects/rehacktor.png'
+import rehacktor from '../../public/assets/projects/rehacktor.jpg'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'

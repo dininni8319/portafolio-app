@@ -1,6 +1,3 @@
-// import sendgrid from "@sendgrid/mail"; 
-
-// sendgrid.setApiKey(process.env.NEXT_PUBLIC_API_KEY);
 import nodemailer from 'nodemailer';
 export default async function handler(req, res) {
   
