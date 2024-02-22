@@ -26,7 +26,7 @@ const Experience = () => {
                       <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                   </div>
                   <div className="mt-3 sm:pr-8 shadow-xl shadow-gray-400 rounded-xl p-2">
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Web Developer</h4>
+                    <h4 className="text-lg font-semibold text-gray-900">Web Developer</h4>
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February, 2024</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">Freelancer</p>
                   </div>
@@ -45,7 +45,7 @@ const Experience = () => {
                       <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                   </div>
                   <div className="mt-3 sm:pr-8 shadow-xl shadow-gray-400 rounded-xl p-2">
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Codebar.io</h4>
+                    <h4 className="text-lg font-semibold text-gray-900">Codebar.io</h4>
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August, 2023</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">Coach</p>
                   </div>
@@ -64,7 +64,7 @@ const Experience = () => {
                       <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                   </div>
                    <div className="mt-3 sm:pr-8 shadow-xl shadow-gray-400 rounded-xl p-2">
-                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white">University of Maryland</h4>
+                      <h4 className="text-lg font-semibold text-gray-900 ">University of Maryland</h4>
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August, 2023</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">Computer Science</p>
                   </div>
@@ -83,7 +83,7 @@ const Experience = () => {
                       <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                   </div>
                   <div className="mt-3 sm:pr-8 shadow-xl shadow-gray-400 rounded-xl p-2">
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Credit Network & Finance</h4>
+                    <h4 className="text-lg font-semibold text-gray-900">Credit Network & Finance</h4>
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">May, 2022</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">Full Stack Developer</p>
                   </div>
@@ -102,7 +102,7 @@ const Experience = () => {
                       <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                   </div>
                    <div className="mt-3 sm:pr-8 shadow-xl shadow-gray-400 rounded-xl p-2">
-                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Aulab</h4>
+                      <h4 className="text-lg font-semibold text-gray-900">Aulab</h4>
                      <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">October, 2021</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">HackJS Certificate</p>
                   </div>
@@ -121,7 +121,7 @@ const Experience = () => {
                       <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                   </div>
                   <div className="mt-3 sm:pr-8 shadow-xl shadow-gray-400 rounded-xl p-2">
-                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Aulab</h4>
+                      <h4 className="text-lg font-semibold text-gray-900">Aulab</h4>
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">July 2021</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">Hackademy Certificate</p>
                   </div>
@@ -140,7 +140,7 @@ const Experience = () => {
                       <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                   </div>
                   <div className="mt-3 sm:pr-8 shadow-xl shadow-gray-400 rounded-xl p-2">
-                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Propulsion</h4>
+                      <h4 className="text-lg font-semibold text-gray-900 ">Propulsion</h4>
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">November 2020</time>
                       <p className="text-base font-normal text-gray-500 dark:text-gray-400">Full-Stack Developer</p>
                   </div>

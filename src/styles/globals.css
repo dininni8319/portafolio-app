@@ -46,14 +46,13 @@ html {
 }
 
 .link {
-  @apply transition-all duration-300 ease-in-out text-sm 
-  hover:scale-110
+  @apply transition-all duration-300 ease-in-out text-sm hover:scale-110
 }
 
 @media only screen and (min-width: 765px) {
    .card-project {
-    width: 550px;
-    height: 350px;
-    overflow: hidden;
+      width: 550px;
+      height: 350px;
+      overflow: hidden;
   }
 } 

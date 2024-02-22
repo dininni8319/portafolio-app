@@ -10,7 +10,6 @@ import LocaleSwitcher from './LocaleSwitcher';
 import { paths } from '../src/utils';
 import { useWidth } from '../src/hooks/window-size';
 
-
 const Navbar = () => {
   const [ nav, setNav ] = useState(false)
   const [ shadow, setShadow ] = useState(false)

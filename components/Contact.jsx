@@ -22,7 +22,6 @@ const Contact = () => {
       service: service.value,
       message: message.value
     }
-    console.log("🚀 ~ handleSubmit ~ data:", data)
 
     try {
       const res = await fetch('/api/contact', {
