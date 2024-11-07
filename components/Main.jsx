@@ -27,7 +27,7 @@ const Main = () => {
     <div id='home' className='w-full h-screen text-center'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
-          <p className='uppercase text-sm tracking-widest text-gray-600'>
+          <p className='uppercase text-sm tracking-widest text-gray-600 mt-5 md:mt-0'>
             {t('let_build')}
           </p>
           <motion.h1 initial="hidden" animate="visible" variants={transition} className='py-4 text-gray-700'>
