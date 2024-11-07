@@ -27,7 +27,7 @@ const Experience = () => {
                         </div>
                         <div className="mt-3 sm:pr-8 shadow-xl shadow-gray-400 rounded-xl p-2">
                             <h4 className="text-lg font-semibold text-gray-900">Freelancing</h4>
-                            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August, 2023</time>
+                            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August, 2024</time>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">Web Developer</p>
                         </div>
               </motion.li>
